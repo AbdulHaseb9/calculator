@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+html,
+body {
+  height: 100vh;
+  width: 100%;
+  background: var(--primary_color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+:root {
+  --primary_color: #ebebed;
+  --primary_color_light: #aeaeae;
+  --secondary_color: #3f4d5b;
+  --secondary_color_light: #435062;
+  --secondary_color_dark: #3d4655;
+}
+
+main {
+  height: 420px;
+  width: 259px;
+  background: var(--secondary_color_dark);
+  border-radius: 5px;
+}
+
+.history-container {
+  padding: 10px 20px;
+}
+
+.history {
+  text-align: right;
+  padding-bottom: 3px;
+  font-weight: 500;
+  color: var(--primary_color_light);
+  letter-spacing: 2px;
+  border-bottom: 1px solid var(--primary_color_light);
+}
+
+.display-container #input {
+  width: 100%;
+  text-align: right;
+  font-size: 24px;
+  color: var(--primary_color);
+  background: transparent;
+  border: none;
+  outline: none;
+  padding: 20px;
+}
+
+.btns {
+  height: 306px;
+  width: 100%;
+  display: grid;
+  place-items: center;
+  gap: 4px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+}
+
+.btns button {
+  height: 100%;
+  width: 100%;
+  font-size: 18px;
+  outline: none;
+  border: none;
+}
+
+.btns button:active {
+  background: var(--secondary_color_dark);
+}
+
+.numbers {
+  background-color: var(--secondary_color_light);
+  color: var(--primary_color);
+}
+
+.operation {
+  background: var(--secondary_color);
+  color: var(--primary_color_light);
+  font-weight: 600;
+}
+
+.clear {
+  color: red;
+}
+
+.zero {
+  grid-column: 1/3;
+}
