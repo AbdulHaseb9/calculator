@@ -100,4 +100,7 @@ main {
     width: 100vw;
     padding: 40px 0px;
   }
+  .btns {
+    grid-template-rows: repeat(5, 60px);
+  }
 }
